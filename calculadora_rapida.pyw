@@ -15,7 +15,7 @@ class CalculadoraALEXSolutions(ctk.CTk):
     def __init__(self):
         super().__init__()
 
-        self.title("ALEXSolutions - Calculo Ganancia")
+        self.title("ALXSolutions - Calculo Ganancia")
         self.geometry("460x710") 
         self.resizable(False, False)
         self.configure(fg_color=BLANCO_FONDO)
@@ -23,7 +23,7 @@ class CalculadoraALEXSolutions(ctk.CTk):
         self.main_frame = ctk.CTkFrame(self, fg_color="transparent")
         self.main_frame.pack(expand=True, fill="both", padx=30, pady=(10, 10))
 
-        ctk.CTkLabel(self.main_frame, text="ALEXSolutions", font=("Roboto", 20, "bold"), text_color=AZUL_CORP).pack(pady=(5, 0))
+        ctk.CTkLabel(self.main_frame, text="ALXSolutions", font=("Roboto", 20, "bold"), text_color=AZUL_CORP).pack(pady=(5, 0))
 
         self.entry_costo = ctk.CTkEntry(self.main_frame, placeholder_text="Costo del Producto ($)", height=40, font=("Roboto", 16), border_color=AZUL_CORP)
         self.entry_costo.pack(pady=5, fill="x")
